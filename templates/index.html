@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Face Emotion Detection</title>
+
+</head>
+
+<body bgcolor="lightblue">
+    
+    <h1 align = 'center'>Face Emotion Detection System</h1>
+    <form action="{{url_for('predict')}}" method="post" enctype="multipart/form-data" align="center">
+        <input type='file' name='image'></input><br><br><br>
+        <button type="submit">Detect</button>
+    </form>
+
+    <h3><br>{{prediction_text}}</h3>
+
+</body>
+
+
+
+
+</html>
